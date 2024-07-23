@@ -1,7 +1,7 @@
 resource "aws_network_acl" "PublicSubnetNACL" {
   vpc_id = module.var.vpc_id
 
-  # Ingress rules
+  
   ingress {
     protocol   = "tcp"
     rule_no    = 100
@@ -29,7 +29,7 @@ resource "aws_network_acl" "PublicSubnetNACL" {
     to_port    = 22
   }
 
-  # Egress rules
+
   egress {
     protocol   = "-1"
     rule_no    = 200
@@ -44,7 +44,7 @@ resource "aws_network_acl" "PublicSubnetNACL" {
 resource "aws_network_acl" "PrivateSubnetNACL" {
   vpc_id = module.var.vpc_id
 
-  # Ingress rules
+
   ingress {
     protocol   = "-1"
     rule_no    = 100
@@ -72,7 +72,7 @@ resource "aws_network_acl" "PrivateSubnetNACL" {
     to_port    = 65535
   }
 
-  # Egress rules
+  
   egress {
     protocol   = "-1"
     rule_no    = 200

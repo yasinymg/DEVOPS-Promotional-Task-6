@@ -27,6 +27,7 @@ Screenshot:![terraform_apply](screenshots/output_of_terraform_apply.png)
 Command: terraform destroy
 
 Purpose: Destroys all resources created by Terraform.
+![terraform_destroy](screenshots/terraform_destroy.png)
 
 ### creating KCVPC
 ![KCVP](screenshots/creating_KCVCP.png)
