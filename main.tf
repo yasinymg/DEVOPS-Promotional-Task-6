@@ -13,6 +13,8 @@ provider "aws" {
 
 module "ec2_Instance" {
   source = "./modules/ec2_Instance"
+   ami_value = "ami-0932dacac40965a65" 
+  instance_type_value = "t2.micro"
   
 }  
 
