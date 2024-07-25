@@ -12,7 +12,7 @@ provider "aws" {
 }
 
 module "ec2_Instance" {
-  source = "modules/ec2_Instance"
+  source = "./modules/ec2_Instance"
   
 }  
 
