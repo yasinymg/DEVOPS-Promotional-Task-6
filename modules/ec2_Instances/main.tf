@@ -25,5 +25,10 @@ resource "aws_instance" "PrivateInstance" {
 
   tags = {
     Name = "PrivateInstance"
+
+      user_data = <<-EOF
+              #!/bin/bash
+              $(filebase64("postgresql.sh"))
+              EOF
   }
 }

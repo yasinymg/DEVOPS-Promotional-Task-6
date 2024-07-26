@@ -1,35 +1,31 @@
 variable "ami_id" {
-  description = "AMI ID for the EC2 instances"
+  description = "The AMI ID to use for the instances"
   type        = string
-  default     = "ami-0932dacac40965a65"  
+  default     = "ami-0932dacac40965a65"
 }
 
 variable "instance_type" {
-  description = "Instance type for the EC2 instances"
+  description = "The type of instance to start"
   type        = string
-  default     = "t2.micro" 
+  default     = "t2.micro"
 }
 
 variable "public_subnet_id" {
-  description = "Subnet ID for the public instance"
+  description = "The ID of the public subnet"
   type        = string
-  
 }
 
 variable "private_subnet_id" {
-  description = "Subnet ID for the private instance"
+  description = "The ID of the private subnet"
   type        = string
-  
 }
 
 variable "public_security_group_id" {
-  description = "Security Group ID for the public instance"
+  description = "The ID of the public security group"
   type        = string
-  
 }
 
 variable "private_security_group_id" {
-  description = "Security Group ID for the private instance"
+  description = "The ID of the private security group"
   type        = string
-  
 }
